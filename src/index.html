@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Showcase</title>
+  <!-- Tailwind CSS CDN -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-amber-50 shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold">Perfume Store</a>
+      <ul class="flex space-x-6">
+        <li><a href="#" class="font-semibold hover:text-amber-800">Home</a></li>
+        <li><a href="#" class="font-semibold hover:text-amber-800">Products</a></li>
+        <li><a href="#"class="font-semibold hover:text-amber-800">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-neutral-100 shadow-md w-200  justify-items-center flex-1  grid mx-50 py-10">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4  " >Explore Our Products</h1>
+              <img src="/image/ايقونة عطر جميلة وانيقو بجانبها فتاة رسمة فالوان هادئة.jpg" alt="Gadget Pro" class="w-full h-48 object-cover rounded-xl">
+      <p class="text-lg  [margin-top:40px] text-amber-950  italic fon-great-vibes shadow-lg ">The Fragrance of Beauty in a Bottle</p>
+    </div>
+  </section>
+
+  <!-- Main Section: Product Slider -->
+  <main class="container mx-auto px-6 py-12">
+    <div class="relative">
+      <!-- Left Arrow -->
+      <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-amber-200 p-2 rounded-full shadow-md z-10">
+       &#10094;
+      </button>
+
+      <!-- Slider Container -->
+      <div id="slider" class="flex space-x-6">
+        <!--  frist Product Cards -->
+        <div class="min-w-[300px] bg-amber-100 rounded-xl grounded-2xl  shadow-md p-4 cursor-pointer product-card"
+             data-name="Jador"
+             data-company="Dior"
+             data-price="$299"
+             data-description="Its perfumes ara characterized br femininty and elegance."
+             data-image="/image/perfum1.jpg"
+             data-rating="4">
+          <img src="/image/perfum1.jpg" alt="Gadget Pro" class="w-full h-48 object-cover rounded-xl">
+          <h3 class="mt-4 font-semibold">Jador</h3>
+          <p class="text-blue-600 font-bold">$299</p>
+          <div class="flex mt-2">
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-gray-300">★</span>
+          </div>
+        </div>
+     <!-- second Product Card -->
+         <div class="min-w-[300px] bg-amber-100 rounded-xl  rounded-2xl shadow-md p-4 cursor-pointer product-card"
+             data-name="Chanal"
+             data-company="Chanal"
+             data-price="$299"
+             data-description="Considered one of the most prestigious perfume."
+             data-image="/image/perfum2.png"
+             data-rating="4">
+          <img src="/image/perfum2.png" alt="Gadget Pro" class="w-full h-48 object-cover rounded-xl">
+          <h3 class="mt-4 font-semibold">Chanal</h3>
+          <p class="text-blue-600 font-bold">$299</p>
+          <div class="flex mt-2">
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-gray-300">★</span>
+          </div>
+        </div>
+         <!-- third Product Card -->
+         <div class="min-w-[300px] bg-amber-100 rounded-xl rounded-2xl shadow-md p-4 cursor-pointer product-card"
+             data-name="luxury"
+             data-company="TechCorp"
+             data-price="$299"
+             data-description="High-end gadget with superb performance."
+             data-image="/image/luxury-.jpg"
+             data-rating="4">
+          <img src="/image/luxury-.jpg" alt="Gadget Pro" class="w-full h-48 object-cover rounded-xl">
+          <h3 class="mt-4 font-semibold">luxury</h3>
+          <p class="text-blue-600 font-bold">$199</p>
+          <div class="flex mt-2">
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-gray-300">★</span>
+          </div>
+        </div>
+
+        <!-- fourth card -->
+          <div class="min-w-[300px] bg-amber-100 rounded-xl rounded-2xl shadow-md p-4 cursor-pointer product-card"
+             data-name="Sauvage"
+             data-company="Gucci"
+             data-price="$299"
+             data-description="High-end gadget with superb performance."
+             data-image="/image/perfum1.jpg"
+             data-rating="4">
+          <img src="/image/Sauvage.jpeg" alt="Gadget Pro" class="w-full h-48 object-cover rounded-xl">
+          <h3 class="mt-4 font-semibold">Sauvage</h3>
+          <p class="text-blue-600 font-bold">$300</p>
+          <div class="flex mt-2">
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-gray-300">★</span>
+          </div>
+        </div>
+
+
+               <!-- fifth card -->
+                    <div class="min-w-[300px] bg-amber-100 rounded-xle rounded-2xl shadow-md p-4 cursor-pointer product-card"
+             data-name="Larocheller"
+             data-company="Versace"
+             data-price="$299"
+             data-description="Provid blod and cheerful Fragrance."
+             data-image="/image/perfum1.jpg"
+             data-rating="4">
+          <img src="/image/Larochelle.webp" alt="Gadget Pro" class="w-full h-48 object-cover rounded-xl">
+          <h3 class="mt-4 font-semibold">Larochelle</h3>
+          <p class="text-blue-600 font-bold">$150/p>
+          <div class="flex mt-2">
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-yellow-400">★</span>
+            <span class="star text-gray-300">★</span>
+          </div>
+        </div>
+
+   
+      </div>
+
+      <!-- Right Arrow -->
+      <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-amber-200 p-2 rounded-full shadow-md z-10">
+     &#10095;
+      </button>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-2xl shadow-lg p-6 w-11/12 md:w-2/3 lg:w-1/2 relative">
+      <button id="closeModal" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">&times;</button>
+      <div class="flex flex-col md:flex-row">
+        <img id="modalImage" src="" alt="" class="w-full md:w-1/2 object-cover rounded-xl">
+        <div class="mt-4 md:mt-0 md:ml-6 flex-1">
+          <h2 id="modalName" class="text-2xl font-bold"></h2>
+          <p id="modalCompany" class="text-gray-600 mt-1"></p>
+          <p id="modalDescription" class="mt-4 text-gray-700"></p>
+          <p id="modalPrice" class="mt-4 text-blue-600 font-bold"></p>
+          <div class="flex items-center mt-4 space-x-2">
+            <span>Rate:</span>
+            <div id="modalStars" class="flex space-x-1 cursor-pointer">
+              <!-- interactive stars -->
+              <span class="modal-star text-gray-300 text-2xl">★</span>
+              <span class="modal-star text-gray-300 text-2xl">★</span>
+              <span class="modal-star text-gray-300 text-2xl">★</span>
+              <span class="modal-star text-gray-300 text-2xl">★</span>
+              <span class="modal-star text-gray-300 text-2xl">★</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-amber-100 shadow-md  py-6">
+    <div class="container mx-auto text-center">
+      &copy; 2025 Perfume. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="/main.js">
+   
+  </script>
+</body>
+</html>
